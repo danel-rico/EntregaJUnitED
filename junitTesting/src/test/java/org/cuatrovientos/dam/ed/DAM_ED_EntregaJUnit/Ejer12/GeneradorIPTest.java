@@ -15,7 +15,10 @@ class GeneradorIPTest {
 	@AfterEach
 	void tearDown() throws Exception {
 	}
-
+	/*
+	 * Este test como bien dice su nombre genera un número aleatorio entre el 0 y el 255, esta creación
+	 * la repetirá las veces que se lo indiques, en este caso 1000 veces
+	 */
 	@Test
 	void testGenerarNumero() {
 		int min = 0;
@@ -29,6 +32,10 @@ class GeneradorIPTest {
 		}
 
 	}
+	/*
+	 * Est test genera IP usando la funcion de generarumero(), en este caso también se repite 1000 veces la
+	 * creación de la IP y luego comprueba si es correcta, es decir, si ni el primer caracter ni el ultimo es 0
+	 */
 
 	@Test
 	void testGenerarIp() {

@@ -15,7 +15,9 @@ class FacturaTest {
 	@AfterEach
 	void tearDown() throws Exception {
 	}
-
+	/*
+	 * Este test nos comprueba el precio total de la factura y si no es la esperada 
+	 */
 	@Test
 	void testTotalFactura() {
 		Factura factura = new Factura();
@@ -31,8 +33,10 @@ class FacturaTest {
 		
 		//ASSERTS
 		assertEquals(esperado, actual,"El total de la factura no es el esperado");
-		
 	}
+	/*
+	 * Este test hace lo mismo que el anterior, la única diferencia es que aqu´se le aplica el IVA
+	 */
 
 	@Test
 	void testAplicarIva() {

@@ -15,7 +15,9 @@ class TransporteTest {
 	@AfterEach
 	void tearDown() throws Exception {
 	}
-
+	/*
+	 * Este test nos comprueba el peso total de la camioneta si no es el esperado fallará
+	 */
 	@Test
 	void testPesoTotal() {
 		Camioneta camioneta = new Camioneta();
@@ -32,7 +34,9 @@ class TransporteTest {
 		// ASSERTS
 		assertEquals(expectedPesoTotal, actualPesoTotal, "El peso total de la camioneta no coincide");
 	}
-
+	/*
+	 * Este test nos compara la distancia de la camioneta con la minima y maxima permitida
+	 */
 	@Test
 	void testRecorrerDistancia() {
 		Camioneta camioneta = new Camioneta();
