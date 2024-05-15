@@ -35,7 +35,10 @@ class GeneradorIPTest {
 
 		GeneradorIP generador = new GeneradorIP();
 		int repeticion = 1000;
-
+/*
+ * Aqui se debe poner el try-catch pues si la repetición es de 1000 veces hay muchisima probabilidades de que en 
+ * al menos una repetición o bien el primer o bien el ultimo caracter sea 0
+ */
 		for (int i = 0; i < repeticion; i++) {
 			try {
 				// Expected

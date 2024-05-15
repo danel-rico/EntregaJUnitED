@@ -4,11 +4,17 @@ public class Paquete {
 	String destino;
 	float peso;
 
+	/*
+	 * Constructor de la clase
+	 */
 	public Paquete(String destino, float peso) {
 		this.destino = destino;
 		this.peso = peso;
 	}
-
+	/*
+	 * Getters y Setters de la clase
+	 */
+	
 	public String getDestino() {
 		return destino;
 	}
@@ -25,6 +31,9 @@ public class Paquete {
 		this.peso = peso;
 	}
 
+	/*
+	 * ToString de la clase
+	 */
 	@Override
 	public String toString() {
 		return "Paquete [destino=" + destino + ", peso=" + peso + "]";
